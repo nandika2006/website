@@ -604,7 +604,362 @@ contact.html:
         </div>
     </body>
     </html>
-    
+
+style.css:
+
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        
+        html{
+          font-size: 100;
+          scroll-behavior: smooth;
+        }
+        body{
+            font-family: "Merienda", cursive;
+            font-optical-sizing: auto;
+            font-style: normal;
+            overflow-x: hidden;
+        }
+        
+        #resto{
+          position: relative;
+          height: 100vh;
+          width: 100vw;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+        }
+        
+        #resto::before{
+          content: "";
+          top: 0%;
+          left: 0%;
+          width: 100%;
+          height: 100%;
+          background-image: url("eecfa46e-ecd7-41de-a4ca-b504aa6cd5d3.jpg");
+          position:absolute;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-attachment: fixed;
+          filter: brightness(50%);
+        }
+        
+        #restocontent{
+          position: absolute;
+        }
+        
+        h1,h2{
+          font-size: 3rem;
+          color:lavender;
+          font-style: italic;
+          margin-bottom: 5rem;
+        }
+        #menu{
+          font-family: monospace;
+          font-size: 1.5rem;
+          color: antiquewhite;
+          border: 1px white solid;
+          border-radius: 25px;
+          padding: 4px;
+        }
+        
+        #restocontent a:hover{
+          background-color:cadetblue;
+        }
+        
+        /*------------------------------------------------------------------------------------------*/
+        /* header section*/
+        
+        #header{
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          position: fixed;
+          top: 0;
+          width: 100vw;
+          height: 70px;
+          line-height: 70px;
+        }
+        
+        #navbar{
+        display: flex;
+        justify-content: space-around;
+        color:azure;
+        background: rgba(134, 162, 162, 0.5);
+        }
+        
+        #navbar h1{
+        font-size: 2rem;
+        font-family: sans-serif;
+        color:khaki;
+        text-shadow: none;
+        display: flex;
+        justify-content: space-around;
+        }
+        
+        #navbar ul{
+          display: flex;
+        }
+        
+        #navbar ul li{ 
+        list-style: none;
+        padding: 3px 15px 3px 15px;
+        }
+        
+        #navbar ul li a{
+        text-decoration: underline;
+        color:azure;
+        }
+        
+        #email a{
+          text-decoration: solid;
+          padding: 3px 15px 3px 15px;
+          color: lavender;
+          border: 1px solid blanchedalmond;
+          border-radius: 25px;
+        }
+        
+        /*-----------------------------------------------------------------------------------------*/
+        /*menu section*/
+        #menu{
+          padding: 0 25px 0 25px;
+        }
+        
+        #section{
+          padding: 0 25px 0 25px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          color:black;
+          text-align: center;
+          font-size: 2rem;
+        }
+        
+        #menu_row{
+          padding: 0 100px 0 100px;
+          display: flex;
+        }
+        
+        #menu_col{
+          border: 1px solid #bbb;
+          margin: 5px;
+          box-shadow: 2px 2px 2px #bbb;
+          background-color: #fff;
+          padding: 10px;
+          flex: 1;
+        }
+        
+        #menu_col h2{
+          padding: 5px;
+          color: #fff;
+          text-align: center;
+          background-color:dimgrey;
+        }
+        
+        #image{
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          padding: 1px;
+          border:2px solid black;
+        }
+        
+        #image img{
+           width: 100%;
+           height: 100%;
+           border-radius: 50%;
+           object-fit:cover;
+           border-color: black;
+           top:0%;
+           align-items: center;
+           
+        }
+        
+        .box{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          margin: 5px;
+        }
+        
+        #rate{
+          color: black;
+          text-align: center;
+        }
+        
+        /*---------------------------------------------------------------------------------------*/
+        /*about section*/
+        
+        #about{
+          padding: 25px 0 25px 0;
+        }
+        
+        #about_row{
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          padding: 0 100px 0 100px;
+          color: coral;
+        }
+        
+        .about_col{
+          flex:1;
+        }
+        
+        #about_img{
+          width: 300px;
+          height: 300px;
+          border-radius: 50%;
+          margin: auto;
+        }
+        
+        #about_img img{
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          object-fit: fill;
+        }
+        
+        /****************************************************************/
+        /*Contact us*/
+        
+        .contact_col p,h3{
+          font-weight: bold;
+          color:lightpink;
+          margin: 10px;
+        }
+        
+        .contact_col p a{
+          text-decoration: none;
+          color:lightpink;
+        }
+        
+        #social{
+          color:black;
+          margin: 3px;
+        }
+        
+        .contact_col form{
+          display: flex;
+          flex-direction: column;
+          background-color:wheat;
+          width: 20%;
+        }
+        
+        #get{
+          font-size: 1rem;
+          text-align: center;
+          justify-content: center;
+          color: black;
+        }
+        
+        /* General Styling */
+        body {
+          font-family: 'Merienda', cursive;
+          margin: 0;
+          padding: 0;
+          background-color: #f5f5f5;
+          color: #333;
+        }
+        
+        /* Contact Form Container */
+        .contact-form-container {
+          max-width: 600px;
+          margin: 50px auto;
+          padding: 30px;
+          background-color: #ffffff;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Form Header */
+        .contact-form-container h2 {
+          text-align: center;
+          color: #333333;
+          margin-bottom: 10px;
+          font-size: 24px;
+        }
+        
+        .contact-form-container p {
+          text-align: center;
+          color: #666666;
+          margin-bottom: 20px;
+          font-size: 16px;
+        }
+        
+        /* Form Groups */
+        .form-group {
+          margin-bottom: 20px;
+        }
+        
+        .form-group label {
+          display: block;
+          font-weight: bold;
+          margin-bottom: 5px;
+          color: #333333;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #dddddd;
+          border-radius: 4px;
+          font-size: 14px;
+          font-family: inherit;
+          box-sizing: border-box;
+          background-color: #fdfdfd;
+        }
+        
+        /* Textarea Specific Styling */
+        .form-group textarea {
+          resize: none;
+        }
+        
+        /* Input and Textarea Focus States */
+        .form-group input:focus,
+        .form-group textarea:focus {
+          border-color: #4CAF50;
+          outline: none;
+          box-shadow: 0 0 5px rgba(76, 175, 80, 0.4);
+        }
+        
+        /* Submit Button */
+        .btn-submit {
+          display: block;
+          width: 100%;
+          padding: 10px;
+          background-color: #4CAF50;
+          color: #ffffff;
+          border: none;
+          border-radius: 4px;
+          font-size: 16px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+        
+        .btn-submit:hover {
+          background-color: #45a049;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+          .contact-form-container {
+              padding: 20px;
+          }
+        
+          .contact-form-container h2 {
+              font-size: 22px;
+          }
+        
+          .contact-form-container p {
+              font-size: 14px;
+          }
+        }
+
 # OUTPUT:
 
 ![image](https://github.com/user-attachments/assets/5211a5fd-0198-468f-9fcc-22c701ece70d)
